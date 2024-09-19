@@ -1,0 +1,75 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+
+body {
+    font-family: 'Sofadi One', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #9ab2c2;
+    color: rgb(221, 27, 27);
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #90abbd;
+    color: rgb(195, 226, 20);
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+nav a.active {
+    font-weight: bold;
+    background-color: #c6c9cc;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(112, 121, 128, 0.1);
+}
+
+footer {
+    padding: 10px;
+    background-color: #adcacc;
+    color: rgb(184, 39, 39);
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
