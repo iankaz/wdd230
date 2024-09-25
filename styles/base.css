@@ -14,8 +14,9 @@ header {
     display: flex;
     align-items: center;
     padding: 10px;
-    background-color: #9ab2c2;
-    color: blue;
+    background-color: #9ab2c2; /* Light blue background */
+    color: #003366; /* Dark blue text for better contrast */
+    font-size: 18px; /* Ensure text is large enough */
 }
 
 .profile-img {
@@ -26,13 +27,14 @@ header {
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: #90abbd;
-    color: rgb(195, 226, 20);
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #90abbd; /* Light blue background */
+        color: #003366; /* Dark blue text for better contrast */
+    
 }
 
 nav a {
@@ -65,11 +67,12 @@ main {
 
 footer {
     padding: 10px;
-    background-color: #adcacc;
-    color: rgb(184, 39, 39);
+    background-color: #adcacc; /* Light blue background */
+    color: #003366; /* Dark blue text for better contrast */
     text-align: center;
 }
 
 footer p {
     margin: 5px 0;
 }
+
