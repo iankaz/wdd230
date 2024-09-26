@@ -1,0 +1,45 @@
+/* Hide hamburger button on desktop screens */
+@media only screen and (min-width: 768px) {
+    .hamburger {
+      display: none;
+    }
+  }
+  
+  /* Style hamburger button on mobile screens */
+  @media only screen and (max-width: 767px) {
+    .hamburger {
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+    
+    /* Style hamburger button */
+    .hamburger span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: #333;
+      margin-bottom: 5px;
+    }
+    
+    /* Style main menu items on mobile view */
+    #main-menu {
+      display: none;
+      position: absolute;
+      top: 40px;
+      right: 10px;
+      background-color: #fff;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+    
+    /* Style main menu items on mobile view when hamburger button is clicked */
+    #main-menu.show {
+      display: block;
+    }
+  }

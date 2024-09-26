@@ -5,23 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ian Kazembe - WDD 230 - Web Frontend Development</title>
     <meta name="description" content="Welcome to the course assignment portal for WDD 230 - Web Frontend Development, created by Ian Kazembe.">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
-
-<script src="scripts/getDates.js" defer></script>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <img src="images/iankaz..jpg" alt="iankaz" class="profile-img">
         <span>Ian Kazembe</span>
+        <button id="dark-mode-button">Toggle Dark Mode</button>
     </header>
     <nav>
+        <!-- Hamburger button -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="site-plan.html">Chamber</a></li>
@@ -44,8 +50,23 @@
         </section>
     </main>
     <footer>
-        <p>© <span id="currentYear"></span> Ian Kazembe, Zimbabwe</p>
+        <p>  <span id="currentYear"></span> Ian Kazembe, Zimbabwe</p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/smallscript.js"></script>
+    <script src="scripts/largescript.js"></script>
+    <script>
+        // Get dark mode button and main elements
+        const darkModeButton = document.getElementById('dark-mode-button');
+        const mainElement = document.querySelector('main');
+
+        // Add event listener to dark mode button
+        darkModeButton.addEventListener('click', () => {
+          // Toggle dark mode classes
+          document.body.classList.toggle('dark-mode');
+          mainElement.classList.toggle('dark-mode');
+        });
+    </script>
 </body>
 </html>
