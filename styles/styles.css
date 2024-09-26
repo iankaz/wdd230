@@ -58,7 +58,7 @@
     }
   
     .nav-menu.active .nav-link {
-      color: #333;
+      color: red;
       text-decoration: none;
     }
   
