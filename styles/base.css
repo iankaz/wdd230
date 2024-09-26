@@ -40,14 +40,14 @@ nav ul {
 nav a {
     text-decoration: none;
     padding: 10px;
-    color: white;
-    background-color: #444;
+    color: #ffffff; /* White text */
+    background-color: #000000; /* Black background */
     border-radius: 5px;
 }
 
 nav a.active {
     font-weight: bold;
-    background-color: #c6c9cc;
+    background-color: #666666; /* Dark gray background */
 }
 
 main {
