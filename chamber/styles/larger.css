@@ -1,0 +1,27 @@
+/* Larger Screen Styles */
+
+@media only screen and (min-width: 1200px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    main section {
+        width: 30%;
+        margin: 20px;
+    }
+}
+
+/* Hero Image Styles */
+
+main section:first-child {
+    background-image: none; /* remove the background image */
+}
+
+main section:first-child img {
+    width: 100%; /* make the image width 100% of its parent element */
+    height: 300px; /* adjust the height to your liking */
+    object-fit: cover; /* make the image cover the entire width and height */
+    margin-bottom: 20px;
+}
