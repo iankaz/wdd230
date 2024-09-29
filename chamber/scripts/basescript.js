@@ -1,13 +1,12 @@
 const hamburgerMenu = document.querySelector('.hamburger-menu');
-const navUl = document.querySelector('nav ul');
-
-navUl.classList.add('hide');
+const navMenu = document.querySelector('nav ul');
 
 hamburgerMenu.addEventListener('click', () => {
-  navUl.classList.toggle('open');
-  if (navUl.classList.contains('open')) {
-    hamburgerMenu.setAttribute('aria-expanded', 'true');
+  navMenu.classList.toggle('open');
+  hamburgerMenu.classList.toggle('open');
+  if (hamburgerMenu.classList.contains('open')) {
+    hamburgerMenu.innerHTML = '<span>X</span>';
   } else {
-    hamburgerMenu.setAttribute('aria-expanded', 'false');
+    hamburgerMenu.innerHTML = '<span>☰</span>';
   }
 });

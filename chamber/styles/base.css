@@ -151,14 +151,20 @@ footer p {
     margin-bottom: 5px;
 }
 
+.hamburger-menu.open span {
+    background-color: #fff;
+}
+
 @media only screen and (max-width: 768px) {
     .hamburger-menu {
         display: block;
     }
-}
-
-nav ul.open {
-    display: block;
+    nav ul {
+        display: none;
+    }
+    nav ul.open {
+        display: block;
+    }
 }
 
 /* Responsive Styles */
@@ -191,41 +197,6 @@ nav ul.open {
   }
 }
 
-/* Hamburger Menu Styles */
-
-.hamburger-menu {
-    display: none; /* hide the hamburger button by default */
-}
-
-nav ul {
-    display: flex; /* display the menu items as a flex container */
-    justify-content: space-between; /* justify the menu items to the left and right */
-}
-
-/* Hide menu items on mobile devices */
-
-@media only screen and (max-width: 768px) {
-    nav ul {
-        display: none; /* hide the menu items on mobile devices */
-    }
-
-    .hamburger-menu {
-        display: block; /* show the hamburger button on mobile devices */
-    }
-
-    .hamburger-menu:hover + nav ul {
-        display: block; /* show the menu items when the hamburger button is hovered */
-    }
-}
-
-nav ul {
-    display: none;
-}
-
-nav ul.open {
-    display: block;
-}
-
 /* Add the following styles to hide the menu items in mobile view */
 @media only screen and (max-width: 768px) {
     nav ul {
@@ -244,5 +215,3 @@ nav ul.open {
   nav ul.open {
     display: block; /* show the menu items when the hamburger button is clicked */
   }
-
-  
