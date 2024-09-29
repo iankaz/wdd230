@@ -137,17 +137,18 @@ footer p {
     position: absolute;
     top: 20px;
     right: 20px;
-    background-color: #fff;
+    background-color: #333; /* Darker background color */
     border: none;
     padding: 10px;
     cursor: pointer;
+    color: #fff; /* Lighter text color */
 }
 
 .hamburger-menu span {
     display: block;
     width: 20px;
     height: 2px;
-    background-color: #333;
+    background-color: #fff; /* Lighter icon color */
     margin-bottom: 5px;
 }
 
