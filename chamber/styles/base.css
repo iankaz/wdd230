@@ -157,6 +157,46 @@ footer p {
 }
 
 @media only screen and (max-width: 768px) {
+    nav ul li {
+      display: none;
+    }
+    .hamburger-menu {
+      display: block;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    nav ul li {
+      display: block;
+    }
+    .hamburger-menu {
+      display: none;
+    }
+  }
+  
+  nav ul.open li {
+    display: block;
+  }
+
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  nav ul {
+    display: block;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
     .hamburger-menu {
         display: block;
     }
@@ -169,6 +209,12 @@ footer p {
 }
 
 /* Responsive Styles */
+
+@media only screen and (min-width: 1200px) {
+  nav ul {
+    display: block;
+  }
+}
 
 @media only screen and (max-width: 768px) {
     main {
@@ -216,3 +262,5 @@ footer p {
   nav ul.open {
     display: block; /* show the menu items when the hamburger button is clicked */
   }
+
+  
