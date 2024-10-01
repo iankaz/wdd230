@@ -10,7 +10,6 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/social-media-image.png">
     <meta property="og:url" content="https://example.com/chamber">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 </head>
@@ -80,10 +79,26 @@
     </main>
     <!-- Footer Section -->
     <footer>
-        <p>© 2024 Harare Chamber of Commerce</p>
+        <p>Chamber Contact Information:</p>
+        <address>
+            <!-- Add chamber contact information here -->
+            123 Main St, Harare, Zimbabwe
+            Phone: +263 771 666 946
+            Email: [info@hararechamber.org] or (mailto:info@hararechamber.org)
+        </address>
         <p>Developed by Ian Kazembe for WDD 230</p>
         <p>Last modified: <span id="last-modified"></span></p>
     </footer>
+
+    <script>// Get the last modified date of the HTML document
+        const lastModified = document.lastModified;
+        
+        // Get the element to display the last modified date
+        const lastModifiedDateElement = document.getElementById('last-modified');
+        
+        // Display the last modified date
+        lastModifiedDateElement.textContent = lastModified;</script>
+
     <script src="scripts/basescript.js"></script>
 </body>
 </html>
