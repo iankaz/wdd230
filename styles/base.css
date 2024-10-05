@@ -27,14 +27,13 @@ header {
 }
 
 nav ul {
-        list-style-type: none;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        background-color: #90abbd; /* Light blue background */
-        color: #003366; /* Dark blue text for better contrast */
-    
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #90abbd; /* Light blue background */
+    color: #003366; /* Dark blue text for better contrast */
 }
 
 nav a {
@@ -51,28 +50,124 @@ nav a.active {
 }
 
 main {
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap within the container */
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+    width: 100vw; /* Set the width to 100% of the viewport */
+    margin: 0; /* Remove the margin to make it full-width */
 }
 
-.card {
-    padding: 20px;
-    margin: 10px 0;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(112, 121, 128, 0.1);
+main > * {
+    flex: 1;
+    min-width: 300px; /* Ensure a minimum width for items */
+}
+
+main picture {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+main picture img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+main picture .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+.hero {
+    position: relative; /* Add relative positioning to the hero container */
+    flex-basis: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.hero picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.herolabel {
+    position: absolute; /* Use absolute positioning for the label */
+    top: 50%; /* Center the label vertically */
+    left: 50%; /* Center the label horizontally */
+    transform: translate(-50%, -50%); /* Adjust the label position */
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0,0,0,.75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+    white-space: nowrap; /* Prevent text wrapping */
+    text-align: center;
+    max-width: none; /* Remove max-width to allow for longer labels */
+}
+
+.map-iframe {
+    width: 100%; /* Set width to 100% */
+    height: 300px;
+    border: 0;
+}
+
+.map {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
 }
 
 footer {
-    padding: 10px;
-    background-color: #adcacc; /* Light blue background */
-    color: #003366; /* Dark blue text for better contrast */
+    background-color: #003366;
+    color: #fff;
+    padding: 1em;
     text-align: center;
+    clear: both;
 }
 
 footer p {
-    margin: 5px 0;
+    margin-bottom: 10px;
 }
 
+.card {
+    flex: 1;
+    padding: 20px;
+    margin: 10px; /* Add margin to prevent overlap */
+    background-color: white;
+    border: 0.05em solid #ddd; /* Reduce border width to 0.05em */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add box shadow for better visibility */
+    width: calc(100% - 40px); /* Ensure cards take up full width minus padding */
+    box-sizing: border-box;
+}
