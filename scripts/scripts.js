@@ -1,18 +1,12 @@
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
-
-hamburger.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
-});
-
-hamburger.addEventListener('click', () => {
-    console.log('Hamburger button clicked!');
-    navMenu.classList.toggle('active');
-  });
+const mainContent = document.querySelector('main');
 
 hamburger.addEventListener('click', () => {
   navMenu.classList.toggle('active');
   hamburger.classList.toggle('open');
+  mainContent.classList.toggle('shifted');
+
   if (hamburger.classList.contains('open')) {
     hamburger.innerHTML = '<span>X</span>';
   } else {
@@ -49,4 +43,3 @@ window.addEventListener('load', () => {
   // Update the visit count display
   visitCountElement.textContent = `Number of visits: ${visitCount}`;
 });
-
