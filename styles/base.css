@@ -47,26 +47,21 @@ nav a.active {
     background-color: #444;
 }
 
-/* Add your existing CSS here */
-
 .nav-menu {
-    display: none;
-    flex-direction: column; /* Ensure the menu items are stacked vertically */
-    position: absolute; /* Position the menu absolutely */
-    top: 60px; /* Adjust based on your header height */
-    left: 0;
-    width: 100%; /* Full width */
+    display: flex; /* Ensure the menu items are displayed horizontally */
+    flex-direction: row; /* Horizontal layout */
+    list-style: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
     background-color: #90abbd; /* Light blue background */
     z-index: 1; /* Ensure menu is on top */
-    transition: max-height 0.3s ease-out; /* Smooth transition */
-    max-height: 0; /* Initially hidden */
-    overflow: hidden; /* Hide overflow */
 }
 
-.nav-menu.active {
-    display: flex;
-    max-height: 500px; /* Adjust based on the number of menu items */
+.nav-item {
+    flex: 1; /* Distribute space evenly */
+    text-align: center; /* Center align text */
 }
+
 
 main.shifted {
     margin-top: 250px; /* Adjust based on your menu height */
