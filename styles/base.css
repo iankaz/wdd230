@@ -49,6 +49,15 @@ nav a.active {
     background-color: #444;
 }
 
+/* Your existing code for the dropdown menu */
+
+.dropdown-menu {
+    position: relative; /* or absolute */
+    z-index: 9999; /* set a higher z-index value */
+  }
+  
+  /* Rest of your code */
+  
 main {
     display: flex;
     flex-wrap: wrap; /* Ensure items wrap within the container */
