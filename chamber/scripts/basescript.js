@@ -12,3 +12,30 @@ if (hamburgerMenu && navMenu) {
     }
   });
 }
+
+// Get the images
+const images = document.querySelectorAll('.lazy-load');
+
+// Function to load the images
+function loadImages() {
+    console.log('Loading images...');
+    images.forEach((image) => {
+        const src = image.dataset.src;
+        console.log(`Loading image: ${src}`);
+        image.src = src;
+    });
+}
+
+// Load the images when the page is scrolled
+window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const imageGallery = document.querySelector('.image-gallery');
+    const imageGalleryTop = imageGallery.offsetTop;
+    const imageGalleryBottom = imageGalleryTop + imageGallery.offsetHeight;
+
+    if (scrollPosition + windowHeight >= imageGalleryTop && scrollPosition <= imageGalleryBottom) {
+        console.log('Loading images...');
+        loadImages();
+    }
+});
