@@ -49,3 +49,4 @@ window.addEventListener('load', () => {
   // Update the visit count display
   visitCountElement.textContent = `Number of visits: ${visitCount}`;
 });
+
