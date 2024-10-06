@@ -52,11 +52,12 @@ nav a.active {
 main {
     display: flex;
     flex-wrap: wrap; /* Ensure items wrap within the container */
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; /* Align items to the start (left) */
+    align-items: flex-start; /* Align items to the top */
     padding: 20px;
     width: 100vw; /* Set the width to 100% of the viewport */
     margin: 0; /* Remove the margin to make it full-width */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
 main > * {
@@ -93,19 +94,11 @@ main picture .overlay {
 }
 
 .hero {
-    position: relative; /* Add relative positioning to the hero container */
-    flex-basis: 100%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    width: 100%;
+    margin: 10px 0; /* Remove auto margin to align to the left */
+    position: relative;
+    border: 1px solid rgba(0,0,0,.1);
     height: 300px;
-    object-fit: cover;
-}
-
-.hero picture {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%; /* Ensure it takes full width */
 }
 
 .hero img {
@@ -115,18 +108,22 @@ main picture .overlay {
 }
 
 .herolabel {
-    position: absolute; /* Use absolute positioning for the label */
-    top: 50%; /* Center the label vertically */
-    left: 50%; /* Center the label horizontally */
-    transform: translate(-50%, -50%); /* Adjust the label position */
+    position: absolute;
+    top: 30px;
+    left: 30px;
     background: radial-gradient(#fff, #4D5B97);
     border: 1px solid rgba(0,0,0,.75);
     padding: 1.5rem;
     box-shadow: 0 0 3rem #fff;
     opacity: 0.75;
-    white-space: nowrap; /* Prevent text wrapping */
-    text-align: center;
-    max-width: none; /* Remove max-width to allow for longer labels */
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family:"Great Vibes", serif;
 }
 
 .map-iframe {
@@ -136,7 +133,7 @@ main picture .overlay {
 }
 
 .map {
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -163,11 +160,12 @@ footer p {
 .card {
     flex: 1;
     padding: 20px;
-    margin: 10px; /* Add margin to prevent overlap */
+    margin: 10px 0; /* Remove auto margin to align to the left */
     background-color: white;
     border: 0.05em solid #ddd; /* Reduce border width to 0.05em */
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add box shadow for better visibility */
-    width: calc(100% - 40px); /* Ensure cards take up full width minus padding */
-    box-sizing: border-box;
+    width: 100%; /* Ensure it takes full width */
+    max-width: calc(100% - 40px); /* Ensure it fits within the container */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
