@@ -14,10 +14,9 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
+<body class="harare-chamber">
     <!-- Header Section -->
     <header>
-        <!-- Page Title Section -->
         <section>
             <h1>Harare Chamber of Commerce</h1>
         </section>
@@ -25,7 +24,6 @@
             <span>☰</span>
         </button>
         <nav>
-            <!-- Navigation Menu -->
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Discover</a></li>
@@ -35,48 +33,70 @@
         </nav>
     </header>
     <!-- Sidebar Section -->
-<div class="sidebar">
-    <div class="sidebar-content">
-        <h3>Demographics</h3>
-        <p>Population: 1.5 million</p>
-        <p>Area: 960.6 km²</p>
-    </div>
-    <div class="sidebar-content">
-        <h3>Events</h3>
-        <ul>
-            <li>Business Expo - Oct 15</li>
-            <li>Networking Event - Nov 10</li>
-            <li>Annual Gala - Dec 5</li>
-        </ul>
-    </div>
-    <div class="sidebar-content">
-        <h3>Attractions</h3>
-        <ul>
-            <li>National Gallery of Zimbabwe</li>
-            <li>Harare Gardens</li>
-            <li>Mbare Market</li>
-        </ul>
-    </div>
-</div>
-   <!-- Main Content Section -->
-<main>
-    <section>
-        <h2>Local Photos of Interest</h2>
-        <div class="image-gallery">
-            <img src="chamber/images/images cup.webp" alt="" data-src="chamber/images/images cup.webp" class="lozad">
-            <img src="" alt="" data-src="image2.jpg" class="lozad">
-            <img src="" alt="" data-src="image3.jpg" class="lozad">
-            <img src="" alt="" data-src="image4.jpg" class="lozad">
-            <img src="" alt="" data-src="image5.jpg" class="lozad">
-            <img src="" alt="" data-src="image6.jpg" class="lozad">
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <h3>Demographics</h3>
+            <p>Population: 1.5 million</p>
+            <p>Area: 960.6 km²</p>
         </div>
-    </section>
-</main>
+        <div class="sidebar-content">
+            <h3>Events</h3>
+            <ul>
+                <li>Business Expo - Oct 15</li>
+                <li>Networking Event - Nov 10</li>
+                <li>Annual Gala - Dec 5</li>
+            </ul>
+        </div>
+        <div class="sidebar-content">
+            <h3>Attractions</h3>
+            <ul>
+                <li>National Gallery of Zimbabwe</li>
+                <li>Harare Gardens</li>
+                <li>Mbare Market</li>
+            </ul>
+        </div>
+        <div class="sidebar-content">
+            <h3>Number of Visits</h3>
+            <p id="visit-message"></p>
+        </div>
+    </div>
+    
+    <!-- Main Content Section -->
+    <main>
+        <section>
+            <h2>Local Photos of Interest</h2>
+            <div class="image-gallery">
+                <figure>
+                    <img src="images/imou signing.webp" alt="Harare Gardens" loading="lazy">
+                    <figcaption>Harare Gardens</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/phoca_thumb_l_img_0920 copy.webp" alt="National Gallery of Zimbabwe" loading="lazy">
+                    <figcaption>National Gallery of Zimbabwe</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/images cup.webp" alt="Mbare Market" loading="lazy">
+                    <figcaption>Mbare Market</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/phoca_thumb_l_img_2800.webp" alt="Business Expo" loading="lazy">
+                    <figcaption>Business Expo</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Zero-mean-normalized-correlation.webp" alt="Networking Event" loading="lazy">
+                    <figcaption>Networking Event</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/office.webp" alt="Annual Gala" loading="lazy">
+                    <figcaption>Annual Gala</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
     <!-- Footer Section -->
     <footer>
         <p>Chamber Contact Information:</p>
         <address>
-            <!-- Add chamber contact information here -->
             123 Main St, Harare, Zimbabwe
             Phone: +263 771 666 946
             Email: [info@hararechamber.org] or (mailto:iankazembe41@gmail.com)
@@ -85,14 +105,12 @@
         <p>Last modified: <span id="last-modified"></span></p>
     </footer>
 
-    <script>// Get the last modified date of the HTML document
+    <script>
+        // Get the last modified date of the HTML document
         const lastModified = document.lastModified;
-        
-        // Get the element to display the last modified date
         const lastModifiedDateElement = document.getElementById('last-modified');
-        
-        // Display the last modified date
-        lastModifiedDateElement.textContent = lastModified;</script>
+        lastModifiedDateElement.textContent = lastModified;
+    </script>
 
     <script src="scripts/basescript.js"></script>
 </body>
