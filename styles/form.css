@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #9ab2c2;
+    --primary-color: rgb(76, 180, 76);
     --secondary-color: #333;
     --font-family: 'Arial, sans-serif';
 }
@@ -120,7 +120,7 @@ form button:hover {
 }
 
 footer {
-    background-color: #9ab2c2;
+    background-color: rgb(76, 180, 76);
     color: darkblue;
     padding: 1em;
     text-align: center;
