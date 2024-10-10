@@ -43,3 +43,13 @@ window.addEventListener('load', () => {
   // Update the visit count display
   visitCountElement.textContent = `Number of visits: ${visitCount}`;
 });
+
+function updateRatingValue(value) {
+  document.getElementById('page-rating-value').textContent = value;
+}
+
+// Ensure the initial value is displayed correctly
+document.addEventListener('DOMContentLoaded', () => {
+  const rangeInput = document.getElementById('page-rating');
+  updateRatingValue(rangeInput.value);
+});
