@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #9ab2c2;
+    --secondary-color: #333;
+    --font-family: 'Arial, sans-serif';
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: whitesmoke;
+    color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #9ab2c2; /* Light blue background */
+    background-color: var(--primary-color);
+    color: #003366; /* Dark blue text for better contrast */
+    font-size: 18px; /* Ensure text is large enough */
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    float: left;
+}
+
+.nav-link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: var(--secondary-color);
+}
+
+main {
+    padding: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form section.card {
+    display: flex;
+    flex-direction: column;
+}
+
+form h2 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input,
+form button {
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input:focus,
+form button:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--secondary-color);
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#dark-mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+}
+
+footer {
+    background-color: #9ab2c2;
+    color: darkblue;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
