@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission Confirmation</title>
+    <link rel="stylesheet" href="styles/record.css"> <!-- Link to the new CSS file -->
+</head>
+<body>
+    <main>
+        <section class="card">
+            <h1>Form Submission Confirmation</h1>
+            <p>Thank you for submitting the form. Here are the details you provided:</p>
+            <ul>
+                <li>Username: <span id="username"></span></li>
+                <li>Email: <span id="email"></span></li>
+                <li>Page Rating: <span id="page-rating"></span></li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        // Extract query parameters from the URL
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('username').textContent = params.get('username');
+        document.getElementById('email').textContent = params.get('email');
+        document.getElementById('page-rating').textContent = params.get('page-rating');
+    </script>
+</body>
+</html>
