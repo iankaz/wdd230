@@ -160,6 +160,14 @@
         document.getElementById('timestamp').value = new Date().toISOString();
     </script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const timestampField = document.getElementById('timestamp');
+            const now = new Date();
+            timestampField.value = now.toISOString();
+        });
+    </script>
+    
     <script src="scripts/basescript.js"></script>
 </body>
 </html>
