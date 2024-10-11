@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Harare Chamber of Commerce</title>
+    <meta name="description" content="The Harare Chamber of Commerce aims to promote local businesses and economic development, provide a platform for networking and community events.">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta property="og:title" content="Harare Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/social-media-image.png">
+    <meta property="og:url" content="https://example.com/chamber">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        form {
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+            margin-right: 20px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .membership-benefits {
+            flex: 1;
+            min-width: 300px;
+        }
+        .membership-benefits ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .membership-benefits li {
+            background-color: #f9f9f9;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <section>
+            <h1>Harare Chamber of Commerce</h1>
+        </section>
+        <button type="button" title="Toggle Navigation Menu" class="hamburger-menu">
+            <span>☰</span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="form.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main Content Section -->
+    <main>
+        <section>
+            <h2>Join the Harare Chamber of Commerce</h2>
+            <form method="get" action="thankyou.html">
+                <label for="first-name">First Name:
+                    <input type="text" id="first-name" name="first-name" required>
+                </label>
+                <label for="last-name">Last Name:
+                    <input type="text" id="last-name" name="last-name" required>
+                </label>
+                <label for="title">Title/Position:
+                    <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}">
+                </label>
+                <label for="email">Email:
+                    <input type="email" id="email" name="email" required placeholder="example@example.com">
+                </label>
+                <label for="phone">Mobile Phone:
+                    <input type="tel" id="phone" name="phone" required>
+                </label>
+                <label for="organization-name">Organization Name:
+                    <input type="text" id="organization-name" name="organization-name" required>
+                </label>
+                <label for="membership-level">Membership Level:
+                    <select id="membership-level" name="membership-level">
+                        <option value="np">NP Membership (Non-Profit)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label for="description">Organization Description:
+                    <textarea id="description" name="description"></textarea>
+                </label>
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <section class="membership-benefits">
+            <h2>Membership Benefits</h2>
+            <ul>
+                <li>NP Membership: No fee, access to events</li>
+                <li>Bronze Membership: Event discounts, basic advertising</li>
+                <li>Silver Membership: Additional training, enhanced advertising</li>
+                <li>Gold Membership: All benefits, premium advertising, special events</li>
+            </ul>
+        </section>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <p>Chamber Contact Information:</p>
+        <address>
+            123 Main St, Harare, Zimbabwe
+            Phone: +263 771 666 946
+            Email: <a href="mailto:info@hararechamber.org">info@hararechamber.org</a>
+        </address>
+        <p>Developed by Ian Kazembe for WDD 230</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+
+    <script>
+        // Get the last modified date of the HTML document
+        const lastModified = document.lastModified;
+        
+        // Get the element to display the last modified date
+        const lastModifiedDateElement = document.getElementById('last-modified');
+        
+        // Display the last modified date
+        lastModifiedDateElement.textContent = lastModified;
+
+        // Set the current timestamp
+        document.getElementById('timestamp').value = new Date().toISOString();
+    </script>
+
+    <script src="scripts/basescript.js"></script>
+</body>
+</html>
