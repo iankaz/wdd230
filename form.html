@@ -61,22 +61,53 @@
                 
                 <label for="password-repeat">Repeat Password:</label>
                 <input type="password" id="password-repeat" name="password-repeat" required>
-                <span id="password-error"></span>
+                <span id="password-error" style="color: red;"></span>
                 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$">
                 
                 <label for="page-rating">Page Rating:</label>
                 <input type="range" id="page-rating" name="page-rating" min="1" max="10" step="1" value="5">
-                <span id="page-rating-value"></span>
+                <span id="page-rating-value">5</span>
                 
                 <button type="submit">SUBMIT</button>
             </section>
         </form>
+        
+        <script>
+            document.querySelector('form').addEventListener('submit', function (e) {
+                const password = document.getElementById('password').value;
+                const passwordRepeat = document.getElementById('password-repeat').value;
+                const errorElement = document.getElementById('password-error');
+        
+                if (password !== passwordRepeat) {
+                    e.preventDefault();
+                    errorElement.textContent = 'Passwords do not match';
+                    document.getElementById('password').style.borderColor = 'red';
+                    document.getElementById('password-repeat').style.borderColor = 'red';
+                } else {
+                    errorElement.textContent = '';
+                    document.getElementById('password').style.borderColor = '';
+                    document.getElementById('password-repeat').style.borderColor = '';
+                }
+            });
+    
+            const rangeInput = document.getElementById('page-rating');
+            const rangeValue = document.getElementById('page-rating-value');
+    
+            rangeInput.addEventListener('input', function () {
+                rangeValue.textContent = rangeInput.value;
+            });
+        </script>
     </main>
     <footer>
         <small>© <span id="currentYear"></span> Ian Kazembe, Harare Zimbabwe</small>
         <h2 id="lastModified" aria-live="polite">Last modified: <span id="lastModifiedDate"></span></h2>
     </footer>
-</body>
-</html>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        document.getElementById('lastModifiedDate').textContent = document.lastModified;
+    </script>
+    </body>
+    </html>
+    
