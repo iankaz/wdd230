@@ -51,16 +51,15 @@
     <main>
         <div class="hero">
             <picture>
-                <source srcset="week03/images/NorthBirdsEye.webp" media="(max-width: 400px)">
-                <source srcset="week03/images/NorthBirdsEye.webp" media="(min-width: 401px)">
-                <img src="week03/images/NorthBirdsEye.webp" alt="Salt Lake City Temple - 2022">
+                <source srcset="week03/images/NorthBirdsEye-small.webp" media="(max-width: 400px)">
+                <source srcset="week03/images/NorthBirdsEye-large.webp" media="(min-width: 401px)">
+                <img src="week03/images/NorthBirdsEye-large.webp" alt="Salt Lake City Temple - 2022">
             </picture>
             <div class="herolabel">
                 <h1>Salt Lake City Temple</h1>
             </div>
         </div>
         
-        </div>
         <section class="card">
             <h2>Learning Activities</h2>
             <a href="week01/chamber-site-plan.html">week01 site plan</a>
@@ -73,6 +72,7 @@
         </section>
     </main>
     <section class="map">
+        <h2>Location Map</h2>
         <div class="iframe-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3099.8690568124375!2d31.068076013682028!3d-17.8981856047593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2szw!4v1728102052561!5m2!1sen!2szw" title="Google Maps of Harare, Zimbabwe" allowfullscreen></iframe>
         </div>
@@ -81,5 +81,9 @@
         <small>© <span id="currentYear"></span> Ian Kazembe, Zimbabwe</small>
         <h4 id="lastModified" aria-live="polite">Last modified: <span id="lastModifiedDate"></span></h4>
     </footer>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        document.getElementById('lastModifiedDate').textContent = document.lastModified;
+    </script>
 </body>
 </html>
