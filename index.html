@@ -29,7 +29,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
     <script src="scripts/getDates.js" defer></script>
-    <script src="scripts/scripts.js" defer></script> <!-- Link to the new JS file -->
+    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/links.js" defer></script>
 </head>
 <body>
     <header>
@@ -68,8 +70,16 @@
         <section class="card">
             <h2>Information</h2>
             <h3 id="visit-count">Number of visits</h3>
-            <h3>Weather information</h3>
         </section>
+        <section class="card">
+            <h2>Weather Info</h2>
+            <h3>Harare, Zimbabwe</h3>
+            <div id="weather-info">
+                <p id="temperature"></p>
+                <p id="condition"></p>
+                <img id="weather-icon" src="" alt="Weather Icon">
+            </div>
+        </section>        
     </main>
     <section class="map">
         <h2>Location Map</h2>

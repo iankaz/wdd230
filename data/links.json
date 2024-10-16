@@ -1,0 +1,18 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {"url":"week01/holygrail.html", "title":"HG Layout"},
+                {"url":"week01/media-query.html", "title":"mQueries"}
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {"url":"week02/activity1.html", "title":"Activity 1"},
+                {"url":"week02/activity2.html", "title":"Activity 2"}
+            ]
+        }
+    ]
+}

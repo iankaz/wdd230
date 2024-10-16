@@ -111,6 +111,43 @@ main {
     font-family:"Great Vibes", serif;
 }
 
+#weather-info {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#weather-info p {
+    margin: 5px 0;
+}
+
+.links-list h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.links-list a {
+    display: block;
+    padding: 5px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.links-list a:hover {
+    text-decoration: underline;
+}
+
+.card h2 {
+    color: blue; /* This will color all h2 headings within elements with the class card */
+}
+
+
+
 .map-iframe {
     width: 100%; /* Set width to 100% */
     height: 300px;
