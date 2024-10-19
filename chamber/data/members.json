@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Econet Wireless Zimbabwe",
+            "address": "123 Main St, Harare",
+            "phone": "+263 771 666 946",
+            "website": "https://www.econet.co.zw",
+            "image": "econet.webp",
+            "membershipLevel": "Gold",
+            "description": "Leading telecommunications company in Zimbabwe."
+        },
+        {
+            "name": "Delta Corporation",
+            "address": "456 Market Rd, Harare",
+            "phone": "+263 778 865 888",
+            "website": "https://www.delta.co.zw",
+            "image": "delta.webp",
+            "membershipLevel": "Silver",
+            "description": "Major beverage company in Zimbabwe."
+        },
+        {
+            "name": "CBZ Holdings",
+            "address": "789 Business Ave, Harare",
+            "phone": "+263 774 432 404",
+            "website": "https://www.cbz.co.zw",
+            "image": "cbz.webp",
+            "membershipLevel": "Gold",
+            "description": "Leading financial services provider in Zimbabwe."
+        },
+        {
+            "name": "Old Mutual Zimbabwe",
+            "address": "101 Finance St, Harare",
+            "phone": "+263 772 222 115",
+            "website": "https://www.oldmutual.co.zw",
+            "image": "old.webp",
+            "membershipLevel": "Platinum",
+            "description": "Comprehensive insurance and financial services."
+        },
+        {
+            "name": "Zimbabwe Power Company",
+            "address": "202 Energy Ave, Harare",
+            "phone": "+263 773 908 876",
+            "website": "https://www.zpc.co.zw",
+            "image": "zim.webp",
+            "membershipLevel": "Gold",
+            "description": "Provider of electricity and energy solutions."
+        },
+        {
+            "name": "NMB Bank",
+            "address": "303 Banking Rd, Harare",
+            "phone": "+263 775 595 212",
+            "website": "https://www.nmbz.co.zw",
+            "image": "nmb.webp",
+            "membershipLevel": "Silver",
+            "description": "Innovative banking services and financial products."
+        },
+        {
+            "name": "Zimbabwe Tourism Authority",
+            "address": "404 Travel Blvd, Harare",
+            "phone": "+263 776 150 032",
+            "website": "https://www.zimbabwetourism.net",
+            "image": "zta.webp",
+            "membershipLevel": "Platinum",
+            "description": "Promoting tourism and travel in Zimbabwe."
+        }
+    ]
+}

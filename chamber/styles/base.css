@@ -175,6 +175,42 @@ main section h2 {
     background-color: #f9f9f9;
 }
 
+#directory-body .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
+
+#directory-body .grid section {
+    text-align: center;
+}
+
+#directory-body .list {
+    display: flex;
+    flex-direction: column;
+}
+
+#directory-body .list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+}
+
+#directory-body .list section img {
+    display: none; /* smaller viewports only */
+}
+
+#directory-body .list section h3 {
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+#directory-body .list section:nth-child(even) {
+    background-color: #bed;
+}
+
 /* Footer Styles */
 footer {
     grid-area: footer;

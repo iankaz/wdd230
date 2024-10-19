@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harare Chamber of Commerce - Directory</title>
+    <meta name="description" content="The Harare Chamber of Commerce aims to promote local businesses and economic development, provide a platform for networking and community events.">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta property="og:title" content="Harare Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/social-media-image.png">
+    <meta property="og:url" content="https://example.com/chamber">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body id="directory-body">
+    <!-- Header Section -->
+    <header>
+        <!-- Page Title Section -->
+        <section>
+            <h1>Harare Chamber of Commerce</h1>
+        </section>
+        <button type="button" title="Toggle Navigation Menu" class="hamburger-menu">
+            <span>☰</span>
+        </button>
+        <nav>
+            <!-- Navigation Menu -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main Content Section -->
+    <main>
+        <div class="menu">
+            <button id="grid">⏹️Grid</button>
+            <button id="list">List</button>
+        </div>
+        <hr>
+        <article class="grid" id="member-display"></article>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <p>Chamber Contact Information:</p>
+        <address>
+            123 Main St, Harare, Zimbabwe<br>
+            Phone: +263 771 666 946<br>
+            Email: <a href="mailto:info@hararechamber.org">info@hararechamber.org</a> or <a href="mailto:iankazembe41@gmail.com">iankazembe41@gmail.com</a>
+        </address>
+        <p>Developed by Ian Kazembe for WDD 230</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+    <script>
+        const lastModified = document.lastModified;
+        const lastModifiedDateElement = document.getElementById('last-modified');
+        lastModifiedDateElement.textContent = lastModified;
+    </script>
+    <script src="scripts/members.js" defer></script>
+    <script src="scripts/basescript.js" defer></script>
+</body>
+</html>
