@@ -5,20 +5,66 @@
     padding: 0;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
+/* Discover Page Specific Styles */
+.discover-page {
     background-color: gray;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "header header"
         "sidebar main"
         "footer footer";
     grid-template-columns: 1fr 3fr;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+}
+
+/* Sidebar Styles for Discover Page */
+.discover-page .sidebar {
+    grid-area: sidebar;
+    background-color: #e9ecef;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+}
+
+.discover-page .sidebar-content {
+    background-color: #fff;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.discover-page .sidebar-content h3 {
+    margin-top: 0;
+}
+
+/* Responsive Styles for Discover Page */
+@media only screen and (max-width: 768px) {
+    .discover-page {
+        grid-template-areas:
+            "header"
+            "main"
+            "sidebar"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto auto;
+    }
+
+    .discover-page .sidebar {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: gray;
 }
 
 h1, h2, h3, h4, h5, h6 {
