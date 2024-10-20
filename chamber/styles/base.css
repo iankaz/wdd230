@@ -244,18 +244,19 @@ main section h2 {
 
 #directory-body .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted min width */
     grid-gap: 20px; /* Increase gap for better spacing */
-    align-items: center;
     padding: 20px; /* Add padding */
 }
 
 #directory-body .grid section {
     text-align: center;
-    padding: 15px; /* Add padding */
+    padding: 20px; /* Increase padding */
+    margin: 10px; /* Add margin */
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 10px; /* Increase border-radius */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Add background color */
 }
 
 #directory-body .list {
@@ -267,11 +268,12 @@ main section h2 {
 #directory-body .list section {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    margin: 10px 0; /* Increase margin for better spacing */
-    padding: 10px; /* Increase padding */
+    margin: 10px 0; /* Increase margin */
+    padding: 20px; /* Increase padding */
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 10px; /* Increase border-radius */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Add background color */
 }
 
 #directory-body .list section img {
@@ -284,8 +286,9 @@ main section h2 {
 }
 
 #directory-body .list section:nth-child(even) {
-    background-color: #bed;
+    background-color: #f9f9f9; /* Adjust background for even items */
 }
+
 
 /* Footer Styles */
 footer {
