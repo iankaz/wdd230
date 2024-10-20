@@ -13,12 +13,12 @@ function displayMembers(members) {
     members.forEach(member => {
         const memberElement = document.createElement('section');
         memberElement.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name}">
+            <img src="images/${member.image}" alt="">
             <h3>${member.name}</h3>
             <p>${member.address}</p>
             <p>${member.phone}</p>
             <p><a href="${member.website}" target="_blank">${member.website}</a></p>
-            <p>${member.membershipLevel}</p>
+            <p>Membership Level: ${member.membershipLevel}</p>
             <p>${member.description}</p>
         `;
         display.appendChild(memberElement);
