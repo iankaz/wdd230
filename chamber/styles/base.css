@@ -230,7 +230,7 @@ main section h2 {
 #directory-body .menu button {
     margin: 0 10px;
     padding: 10px 20px;
-    background-color: #4CAF50; /* or any preferred color */
+    background-color: green; /* or any preferred color */
     color: white;
     border: none;
     cursor: pointer;
@@ -239,7 +239,7 @@ main section h2 {
 }
 
 #directory-body .menu button:hover {
-    background-color: #45a049;
+    background-color: darkblue;
 }
 
 #directory-body .grid {
