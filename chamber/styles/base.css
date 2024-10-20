@@ -221,27 +221,57 @@ main section h2 {
     background-color: #f9f9f9;
 }
 
+#directory-body .menu {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#directory-body .menu button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* or any preferred color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#directory-body .menu button:hover {
+    background-color: #45a049;
+}
+
 #directory-body .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 5px;
+    grid-gap: 20px; /* Increase gap for better spacing */
     align-items: center;
+    padding: 20px; /* Add padding */
 }
 
 #directory-body .grid section {
     text-align: center;
+    padding: 15px; /* Add padding */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #directory-body .list {
     display: flex;
     flex-direction: column;
+    padding: 20px; /* Add padding */
 }
 
 #directory-body .list section {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    margin: 0;
-    padding: 0.25rem;
+    margin: 10px 0; /* Increase margin for better spacing */
+    padding: 10px; /* Increase padding */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #directory-body .list section img {
