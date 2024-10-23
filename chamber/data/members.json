@@ -7,7 +7,8 @@
             "website": "https://www.econet.co.zw",
             "image": "econet.webp",
             "membershipLevel": "Gold",
-            "description": "Leading telecommunications company in Zimbabwe."
+            "description": "Leading telecommunications company in Zimbabwe.",
+            "headingLevel": "h2" 
         },
         {
             "name": "Delta Corporation",
@@ -16,7 +17,8 @@
             "website": "https://www.delta.co.zw",
             "image": "delta.webp",
             "membershipLevel": "Silver",
-            "description": "Major beverage company in Zimbabwe."
+            "description": "Major beverage company in Zimbabwe.",
+            "headingLevel": "h3"
         },
         {
             "name": "CBZ Holdings",
@@ -25,7 +27,8 @@
             "website": "https://www.cbz.co.zw",
             "image": "cbz.webp",
             "membershipLevel": "Gold",
-            "description": "Leading financial services provider in Zimbabwe."
+            "description": "Leading financial services provider in Zimbabwe.",
+            "headingLevel": "h3"
         },
         {
             "name": "Old Mutual Zimbabwe",
@@ -34,7 +37,8 @@
             "website": "https://www.oldmutual.co.zw",
             "image": "old.webp",
             "membershipLevel": "Platinum",
-            "description": "Comprehensive insurance and financial services."
+            "description": "Comprehensive insurance and financial services.",
+            "headingLevel": "h3"
         },
         {
             "name": "Zimbabwe Power Company",
@@ -43,7 +47,8 @@
             "website": "https://www.zpc.co.zw",
             "image": "zim.webp",
             "membershipLevel": "Gold",
-            "description": "Provider of electricity and energy solutions."
+            "description": "Provider of electricity and energy solutions.",
+            "headingLevel": "h3"
         },
         {
             "name": "NMB Bank",
@@ -52,7 +57,8 @@
             "website": "https://www.nmbz.co.zw",
             "image": "nmb.webp",
             "membershipLevel": "Silver",
-            "description": "Innovative banking services and financial products."
+            "description": "Innovative banking services and financial products.",
+            "headingLevel": "h3"
         },
         {
             "name": "Zimbabwe Tourism Authority",
@@ -61,7 +67,8 @@
             "website": "https://www.zimbabwetourism.net",
             "image": "zta.webp",
             "membershipLevel": "Platinum",
-            "description": "Promoting tourism and travel in Zimbabwe."
+            "description": "Promoting tourism and travel in Zimbabwe.",
+            "headingLevel": "h3"
         }
     ]
 }

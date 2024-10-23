@@ -14,7 +14,7 @@ function displayMembers(members) {
         const memberElement = document.createElement('section');
         memberElement.innerHTML = `
             <img src="images/${member.image}" alt="">
-            <h3>${member.name}</h3>
+            <${member.headingLevel}>${member.name}</${member.headingLevel}>
             <p>${member.address}</p>
             <p>${member.phone}</p>
             <p><a href="${member.website}" target="_blank">${member.website}</a></p>
