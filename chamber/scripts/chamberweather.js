@@ -22,3 +22,38 @@ function displayWeather(data) {
 }
 
 getWeather();
+
+const lat = -17.8292; // Latitude for Harare
+const lon = 31.0522; // Longitude for Harare
+const forecastUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,hourly,alerts&units=metric&appid=${apiKey}`;
+
+async function getForecast() {
+    try {
+        console.log("Forecast URL:", forecastUrl);
+        const response = await fetch(forecastUrl);
+        const data = await response.json();
+        console.log("Full API Response:", data);
+        if (data && data.daily) {
+            console.log("Daily forecast data:", data.daily);
+            displayForecast(data);
+        } else {
+            console.error("No 'daily' data found in response");
+        }
+    } catch (error) {
+        console.error('Error fetching forecast data:', error);
+    }
+}
+
+
+function displayForecast(data) {
+    const forecastList = document.getElementById('forecast-list');
+    forecastList.innerHTML = ''; // Clear existing forecast
+    for (let i = 1; i <= 3; i++) {
+        const day = data.daily[i];
+        const listItem = document.createElement('li');
+        listItem.textContent = `Day ${i}: ${day.temp.day}°C, ${day.weather[0].description}`;
+        forecastList.appendChild(listItem);
+    }
+}
+
+getForecast();
