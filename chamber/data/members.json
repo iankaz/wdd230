@@ -5,10 +5,10 @@
             "address": "123 Main St, Harare",
             "phone": "+263 771 666 946",
             "website": "https://www.econet.co.zw",
-            "image": "econet.webp",
+            "image": "eco.webp",
             "membershipLevel": "Gold",
             "description": "Leading telecommunications company in Zimbabwe.",
-            "headingLevel": "h2" 
+            "headingLevel": "h3" 
         },
         {
             "name": "Delta Corporation",

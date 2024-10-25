@@ -137,6 +137,12 @@ main section h2 {
     background-color: #f9f9f9;
 }
 
+.image-gallery figure:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* Directory Body Styles */
 #directory-body .menu {
     display: flex;
@@ -181,18 +187,32 @@ main section h2 {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    width: 100%; /* Ensure the list spans the full width */
 }
 
 #directory-body .list section {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    width: 100%; /* Ensure each section spans the full width */
+    max-width: 100%; /* Prevents overflowing */
     margin: 10px 0;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+#directory-body .list section img {
+    flex: 0 0 auto; /* Prevent image from resizing */
+    margin-right: 20px; /* Add space between image and text */
+}
+
+#directory-body .list section div {
+    flex: 1; /* Allow text to take up remaining space */
 }
 
 #directory-body .list section:nth-child(even) {
