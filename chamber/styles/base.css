@@ -25,7 +25,6 @@ body {
     min-height: 100vh;
 }
 
-/* Sidebar Styles for Discover Page */
 .discover-page .sidebar {
     grid-area: sidebar;
     background-color: #e9ecef;
@@ -44,6 +43,62 @@ body {
 
 .discover-page .sidebar-content h3 {
     margin-top: 0;
+}
+
+.discover-page main {
+    grid-area: main;
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.discover-page main section {
+    background-color: #fff;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.discover-page main section h2 {
+    margin-top: 0;
+}
+
+/* Image Gallery Styles */
+.discover-page .image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.discover-page .image-gallery figure {
+    background-color: #fff;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.discover-page .image-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.discover-page .image-gallery figcaption {
+    padding: 0.5em;
+    text-align: center;
+    font-size: 0.9em;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.discover-page .image-gallery figure:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Styles for Discover Page */
@@ -94,19 +149,35 @@ header nav a:hover {
 
 /* Main Content Styles */
 main {
-    grid-area: main;
-    padding: 2em;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 main section {
     background-color: #fff;
-    padding: 1em;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+main section img {
+    max-width: 100%;
+    height: auto;
 }
 
 main section h2 {
-    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+main section ul {
+    list-style: none;
+    padding: 0;
+}
+
+main section ul li {
+    margin-bottom: 5px;
 }
 
 .image-gallery {
@@ -181,6 +252,8 @@ main section h2 {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    max-width: 100%; /* Ensure it doesn't extend beyond the container */
+    box-sizing: border-box;
 }
 
 #directory-body .list {
@@ -217,6 +290,41 @@ main section h2 {
 
 #directory-body .list section:nth-child(even) {
     background-color: #f9f9f9;
+}
+
+/* Directory Page Styles */
+.directory-page main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.directory-page main section {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 100%; /* Ensure it doesn't extend beyond the container */
+    box-sizing: border-box;
+}
+
+.directory-page main section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.directory-page main section h2 {
+    margin-bottom: 10px;
+}
+
+.directory-page main section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.directory-page main section ul li {
+    margin-bottom: 5px;
 }
 
 /* Footer Styles */
